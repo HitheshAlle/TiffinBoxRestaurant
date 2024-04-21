@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     "Paneer Bhurji": 250,
     "Samosa Chaat": 280,
     "Uttapam": 310,
+    "Aloo Posto":210,
     "Dhokar Dalna":250,
     "Adai": 280,
     "Appam with Stew": 380,
