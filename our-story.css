@@ -46,3 +46,77 @@
     font-weight: 300;
     font-size: 1.1rem;
 }
+.elementInnerPadding{
+    padding: 40px;
+}
+
+.elementOuterMargin{
+    margin-bottom: 2.5vh;
+}
+
+.margin-content{
+    margin-left: -14vw;
+}
+
+.margin-content .c-split__heading{
+    padding:30px 0px;
+    margin-top: 6vh;
+}
+
+.OurMargin{
+    margin-bottom: 2.5vh;
+}
+.communityInner{
+    padding: 40px;
+}
+
+@media screen and (max-width: 390px) {
+    .c-split__image img {
+        height: 56vh;
+    }
+    .the-story{
+        margin-top: 0vh;
+        margin-left: 7.5vw;
+        margin-right: 7.5vw;
+        margin-bottom: 5vh;
+    }
+    .the-story h1{
+        font-size: 2rem;
+    }
+    .the-story p {
+        font-size: 0.85rem;
+    }
+    .elementInnerPadding{
+        padding: 0px;
+    }
+    .elementOuterMargin{
+        margin-bottom: 6vh;
+    }
+    .c-split__image{
+        height: 56vh;
+    }
+    .margin-content{
+        margin-left: -23vw;
+    }
+    .c-split__content {
+        padding-top: 8vh;
+    }
+    .margin-content .c-split__heading{
+        margin-top: 5vh;
+    }
+    .OurMargin{
+        margin-bottom: 6vh;
+    }
+    .c-split{
+        height: 56vh;
+    }
+    .communityInner{
+        padding: 0px;
+    }
+    .c-split__content {
+        padding-top: 6vh;
+    }
+    .top-image-section img {
+        height: 70vh;
+    }
+}
