@@ -15,23 +15,24 @@ body {
 }
 
 /* Navigation Styles */
-
 .NavBar-Items img {
     height: 90px;
     width: 300px;
     margin-right: 100px;
 }
-.NavBar-Items-secondary-color{
-    background-color:  #e0bfa8;
+
+.NavBar-Items-secondary-color {
+    background-color: #e0bfa8;
     padding: 10px;
 }
+
 nav {
-    background-color:#dcedc8; /* Rose Gold */
-     color: #333; /* Dark Gray */ 
+    background-color: #dcedc8;
+    color: #333;
     display: flex;
-    justify-content: space-between; /* Align items with space between them */
+    justify-content: space-between;
     align-items: center;
-    padding: 8px; /* Add padding to nav if needed */
+    padding: 8px;
     text-transform: uppercase;
 }
 
@@ -39,7 +40,7 @@ nav {
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     font-style: normal;
-  }
+}
 
 nav ul {
     list-style-type: none;
@@ -49,11 +50,11 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 45px; /* Adjust spacing between list items */
+    margin-left: 45px;
 }
 
 nav ul li:first-child {
-    margin-left: 0; /* Remove margin from the first item */
+    margin-left: 0;
 }
 
 nav ul li a {
@@ -61,28 +62,53 @@ nav ul li a {
     text-decoration: none;
 }
 
-.Nav-Item-Order_Online{
-    border: 3px solid white;
-    padding: 20px;
-    margin: 40px;
-}
-
 #navBar {
     position: sticky;
     top: 0;
     z-index: 10;
 }
-/* NAV ANIMATIONS */
+
 .Nav-Item-Order_Online {
-    padding: 20px;
-    border: 2px solid white;
     font-size: 1.2rem;
-    transition: border-width 0.3s; /* Add transition for border width */
 }
 
-.Nav-Item-Order_Online:hover {
-    border-width: 5px; /* Increase border width on hover */
+.hamburger-menu{
+    display: none;
 }
+
+.NavBar-Items-secondary-color{
+    display: flex;
+}
+#navbarItems{
+    border: none;
+    background-color: #dcedc8;
+    -webkit-appearance: none;
+    font-size: 3rem;
+    width: 8vw;
+    margin-left: 12vw;
+}
+
+/* NAV ANIMATIONS */
+@media screen and (min-width: 1492px) {
+    .Nav-Item-Order_Online {
+        border: 3px solid white;
+        padding: 20px;
+        margin: 40px;
+        transition: border-width 0.3s; /* Add transition for border width */
+    }
+    .Nav-Item-Order_Online:hover {
+        border-width: 5px; /* Increase border width on hover */
+    }
+}
+
+@media screen and (min-width: 1476px) and (max-width: 1486px) {
+    .Nav-Item-Order_Online {
+        border: 0;
+        padding: 0;
+    }
+}
+
+/* Responsive Styles */
 
 
 /* Slider section */
@@ -93,19 +119,19 @@ nav ul li a {
 
 .slider-container {
     width: 100%;
-    margin: 0 auto; /* Center the slider horizontally */
-    overflow: hidden; /* Hide overflow for smooth sliding */
-    position: relative; /* Needed for button positioning */
+    margin: 0 auto; 
+    overflow: hidden;
+    position: relative; 
 }
 
 .slider {
     display: flex;
-    transition: transform 0.8s ease-in-out; /* Smooth transition on slide change */
+    transition: transform 0.8s ease-in-out; 
 }
 
 .slide {
-    flex: 0 0 100%; /* Make slides equal width to container */
-    position: relative; /* Needed for info overlay positioning */
+    flex: 0 0 100%; 
+    position: relative;
 }
 
 .slide-info {
@@ -128,31 +154,31 @@ nav ul li a {
 .next-btn {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%); /* Center buttons vertically */
+    transform: translateY(-50%);
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    background-color: rgba(0, 0, 0, 0.5); 
     color: white;
     border: none;
     cursor: pointer;
-    opacity: 0.5; /* Semi-transparent initially */
+    opacity: 0.5; 
     transition: opacity 0.2s ease-in-out;
-    font-size: 24px; /* Adjust button size */
+    font-size: 24px; 
 }
 
 .prev-btn {
-    left: 10px; /* Position left button */
+    left: 10px; 
 }
 
 .next-btn {
-    right: 10px; /* Position right button */
+    right: 10px; 
 }
 
 .slider-container:hover .prev-btn,
 .slider-container:hover .next-btn {
-    opacity: 1; /* Buttons become fully visible on hover */
+    opacity: 1; 
 }
 
-.slider .slide:nth-child(1) { /* Make first slide initially active */
+.slider .slide:nth-child(1) { 
     transform: translateX(0);
 }
 
@@ -160,13 +186,12 @@ nav ul li a {
     font-size: 2rem;
 }
 
-/* Dropdown for locations */
-/* Add styles for dropdown menu (optional) */
+/* Location dropdown */
 .locations-dropdown {
     position: absolute;
     top: 100%;  
     left: 0;
-    display: none;  /* Hide initially */
+    display: none; 
     background-color:#f5f5f5; 
     padding: 10px;
     list-style: none;
@@ -174,7 +199,7 @@ nav ul li a {
 }
 
 .NavBar-Items-secondary-color {
-    position: relative; /* Position relative for containing dropdown */
+    position: relative; 
 }
 
 .locations-dropdown.active {
@@ -201,13 +226,13 @@ nav ul li a {
     font-weight: 500;
     font-size: 2.25rem;
 }  
-/* Remove text decoration and set color for the link */
+
 .online-order-label-HomePage a {
     text-decoration: none;
     color: #333;
 }
 
-/* Style for the element containing the arrow */
+
 .element1 {
     border: 2px solid #333;
     display: inline-block;
@@ -216,13 +241,13 @@ nav ul li a {
     position: relative;
 }
 
-/* Style for the arrow */
+
 .arrow-Animation {
     position: absolute;
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
-    animation: none; /* Initially disable animation */
+    animation: none;
     border: 2px solid #333;
     border-right: 0;
     border-top: 0;
@@ -230,18 +255,18 @@ nav ul li a {
     padding: 20px;
 }
 
-/* Add margin-right to adjust the position of the arrow */
+
 .Takeout_Delivery {
     margin-right: 15px;
     padding-right: 15px;
 }
 
-/* Enable animation on hover */
+
 .element1:hover .arrow-Animation {
-    animation: arrowToggle 0.75s infinite alternate; /* Smooth animation */
+    animation: arrowToggle 0.75s infinite alternate; 
 }
 
-/* Keyframes for arrow animation */
+
 @keyframes arrowToggle {
     0% {
         right: 10px; /* Initial position */
@@ -302,6 +327,18 @@ nav ul li a {
     text-transform: uppercase;
 }
 
+
+#reservation-margin-adjust{
+    margin-left: -0.75vw;
+}
+#reservationID h2{ 
+    padding:30px 0px;
+}
+#reservationID .c-split__col{
+    padding: 40px;
+} 
+
+
 /* ----------Our Story---------------- *//* -------------------------- */
 
 .our-story-home {
@@ -325,10 +362,12 @@ nav ul li a {
     justify-content: center;
     align-items: center;
 }
+
 .overlay .ubuntu-regular,.overlay .arrow-Animation{
     color: white;
     border-color: white;
 }
+
 .overlay-text {
 
     font-size: 2rem;
@@ -361,6 +400,7 @@ nav ul li a {
 
 /* -------------------------- *//* -------------------------- */
 /* Footer Styles */
+
 .site-footer {
     background-color:  #e0bfa8; 
     padding: 30px 0;
@@ -438,4 +478,148 @@ nav ul li a {
 .Email-Class-Footer:hover {
     border-width: 5px; /* Increase border width on hover */
 }
+#about-us-image{
+    margin-left: 26.75vw;
+}
 
+/* Responsive styling */
+
+@media screen and (max-width: 500px) {
+
+    .Email-Class-Footer{
+        font-size: 1rem;
+    }
+
+    .Email-Class-Footer:hover {
+        color: grey;
+    }
+    footer nav {
+        padding: 0.65px;
+        font-size: 0.985rem;
+      }
+
+    .Email-Class-Footer{
+        padding: 0;
+        border:0;
+    }
+    
+    .NavBar-Items img{
+        height: 80px;
+        width: 267px;
+        margin-left: -5vw;
+    }
+
+    .NavBar-Items-secondary-color{
+        display: none;
+    }
+    .hamburger-menu{
+        display:flex;
+    }
+    #social-links{
+        display: none;
+    }
+
+    .site-footer{
+        padding: 20px 0;
+    }
+
+    .site-footer-secondary {
+        margin: 5px;
+    }
+
+    .instagram-grid {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .instagram-grid__item img {
+        width: 44vw;
+        height: 49vh;
+        transition: transform 0.3s ease;
+    }
+    #about-us-image{
+        margin-left: 3vw;
+    }
+    
+    .c-split__col-inner .c-split__image img{
+        width: 43vw;
+    }
+
+    .c-split__content {
+        padding: 4px;
+        padding-top: 12vh;
+    }
+
+    #resevation h2{
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+
+    #resevation p{
+        font-size: 0.9rem;
+        margin-top: 10px;
+        font-weight: unset;
+        font-weight: 600;
+    }
+    .c-split {
+        display: flex;
+        background-color: #dcedc8;
+        margin-bottom: 3vh;
+        height: 62vh;
+        overflow: hidden;
+    }
+    .split__image img {
+        width: 46vw;
+    }
+    .element1{
+        padding: 10px 65px;
+        margin-right: 1vw;
+    }
+    #navbarItems{
+        margin-left: 6vw;
+        margin-top: -1vh;
+    }
+    .online-order-label-HomePage  .element1{
+        padding: 20px 65px;
+ 
+    }
+}
+
+@media screen and (max-width: 390px) {
+    #navbarItems {
+        margin-left: -10vw;
+        margin-top: -1vh;
+    }
+    nav ul{
+        padding: 0vw;
+    }
+    .Email-Class-Footer {
+        font-size: 0.85rem;
+    }
+    footer nav{
+        font-size: 0.8rem;
+    }
+    #resevation h2 {
+        font-size: 1.75rem;
+    }
+    .c-split__heading {
+        font-size: 1.75rem;
+      }
+
+    .instagram-grid__item img {
+        width: 44vw;
+        height: 40vh;
+    }
+    .element1 {
+        padding: 10px 52px;
+        margin-right: 1vw;
+    }
+    #about-us-image {
+        margin-left: 6vw;
+    }
+    .NavBar-Items img {
+        height: 80px;
+        width: 267px;
+        margin-left: 0vw;
+      }
+}
