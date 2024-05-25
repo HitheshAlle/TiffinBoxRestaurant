@@ -11,14 +11,34 @@
  </head>
 <body>
 
-    <!-- Navigation Section -->
-    <header id="navBar" style="margin-bottom: 2vh;">
+       <!-- Navigation Section -->
+       <header id="navBar" style="margin-bottom: 2vh;">
         <nav>
             <div class="Nav-container ">
                 <ul class="NavBar-Items">
                     <img src="./images/homepage/RestuarantLogo.png" alt="" class="Top-Title-Image" style="cursor: pointer;" onclick="reloadHomepage()">
-                    <div class="NavBar-Items-secondary-color" style="display: flex;">
-                        <li><a href="./index.html" class="ubuntu-regular Locations">Locations <i class="fas fa-caret-down"></i></a>  <ul class="locations-dropdown">  
+
+                    <div class="hamburger-menu">
+                        <select name="navbarItems" id="navbarItems" onchange="navigateToPage()">
+                            <option value="3linebutton" disabled selected id="linemenu">&#9776;</option>
+                            <optgroup label="Locations">
+                                <option value="./locations.html?city=hyderabad">Hyderabad</option>
+                                <option value="./locations.html?city=chennai">Chennai</option>
+                                <option value="./locations.html?city=mumbai">Mumbai</option>
+                                <option value="./locations.html?city=bengaluru">Bengaluru</option>
+                                <option value="./locations.html?city=delhi">Delhi</option>
+                            </optgroup>
+                            <option value="./reservation.html">Reservation</option>
+                            <option value="./event-party.html">Private parties & events</option>
+                            <option value="./menu.html">Menu</option>
+                            <option value="./our-story.html">Our story</option>
+                            <option value="./onlineorder.html">Order online</option>
+                        </select>
+                    </div>
+                    
+
+                    <div class="NavBar-Items-secondary-color">
+                        <li><a href="#" class="ubuntu-regular Locations">Locations <i class="fas fa-caret-down"></i></a>  <ul class="locations-dropdown">  
                                 <li><a href="locations.html?city=hyderabad">Hyderabad</a></li>
                                 <li><a href="locations.html?city=chennai">Chennai</a></li>
                                 <li><a href="locations.html?city=mumbai">Mumbai</a></li>
@@ -36,7 +56,7 @@
             </div>
         </nav>
     </header>
-
+    
     <div class="news-content">
         <h1 class="ubuntu-regular">News & Updates</h1>
         <p class="ubuntu-regular">coming soon!</p>
@@ -45,7 +65,7 @@
     <footer class="site-footer">
         <div class="site-footer-primary">
             <div class="container">
-                <ul class="social-links" style="margin-left: 30px;">
+                <ul class="social-links" id="social-links" style="margin-left: 30px;">
                     <li><a href="https://www.facebook.com/YourFacebookPage" target="_blank" rel="noopener"><span class="sr-only"><img src="https://www.svgrepo.com/show/299425/facebook.svg" alt=""></span></a></li>
                     <li><a href="https://www.instagram.com/YourInstagramPage/" target="_blank" rel="noopener"><span class="sr-only"><img src="https://www.svgrepo.com/show/303154/instagram-2016-logo.svg" alt=""></span></a></li>
                     <li><a href="https://twitter.com/YourTwitterPage" target="_blank" rel="noopener"><span class="sr-only"><img src="https://cdn2.iconfinder.com/data/icons/threads-by-instagram/24/x-logo-twitter-new-brand-1024.png" alt=""></span></a></li>
