@@ -56,3 +56,27 @@ label i{
     margin-top: 10vh;
     margin-bottom: 28.5vh;
 }
+
+@media screen and (max-width: 390px) {
+    .enter-email {
+        margin-top: 8vh;
+        margin-bottom: 11vh;
+    }
+
+    .enter-email h1{
+        font-size: 2.5rem;
+        padding: 1.6vh 10vw;
+    }
+    .enter-email p{
+        font-size: 0.9rem;
+    }
+    .email-signup-form label {
+        width: 70vw;
+    }
+    .submit-button{
+        margin-top: 6vh;
+    }
+    .element1 {
+        padding: 20px 52px;
+    }
+}
