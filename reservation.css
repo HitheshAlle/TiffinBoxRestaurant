@@ -114,3 +114,37 @@
     margin: 5px 0; /* Add some vertical space between items */
   }
   
+
+  
+@media screen and (max-width: 390px) {
+  .main-reservation-container h2 {
+    padding: 2vh 18vw;
+    background-color: #e0bfa8;
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    margin-bottom: 3vh;
+  }
+  .main-reservation-container {
+    margin-top: 5vh;
+  }
+  .main-reservation-container p {
+    font-size: 1rem;
+    padding: 2vw;
+  }
+
+  .make-a-reservation{
+     width: 75vw;
+  }
+  .make-a-reservation button,.make-a-reservation select{
+    width: 75vw;
+    padding: 2vw;
+  }
+  .make-a-reservation{
+    margin-bottom:5vh;
+  }
+  .main-party-container p{
+    margin-bottom: 3.5vh;
+  }
+}
+
+
