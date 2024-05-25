@@ -22,3 +22,15 @@
     font-size: 1.25rem;
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 390px) {
+    .news-content h1{
+        font-size: 2.5rem;
+        margin-left: 0vw;
+        margin-right: 0vw;
+        padding: 2vh 2vh;
+    }
+    .news-content{
+        margin-bottom: 40vh;
+    }
+}
