@@ -10,32 +10,52 @@
     <link rel="stylesheet" href="./our-story.css">
  </head>
  <body>
-    <!-- Navigation Section -->
-    <header id="navBar" style="margin-bottom: 2vh;">
-        <nav>
-            <div class="Nav-container ">
-                <ul class="NavBar-Items">
-                    <img src="./images/homepage/RestuarantLogo.png" alt="" class="Top-Title-Image" style="cursor: pointer;" onclick="reloadHomepage()">
-                    <div class="NavBar-Items-secondary-color" style="display: flex;">
-                        <li><a href="./index.html" class="ubuntu-regular Locations">Locations <i class="fas fa-caret-down"></i></a>  <ul class="locations-dropdown">  
-                                <li><a href="locations.html?city=hyderabad">Hyderabad</a></li>
-                                <li><a href="locations.html?city=chennai">Chennai</a></li>
-                                <li><a href="locations.html?city=mumbai">Mumbai</a></li>
-                                <li><a href="locations.html?city=bengaluru">Bengaluru</a></li>
-                                <li><a href="locations.html?city=delhi">Delhi</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="./reservation.html" class="ubuntu-regular Reservation">Reservation</a></li>
-                        <li><a href="./event-party.html" class="ubuntu-regular Private-parties">Private parties & events</a></li>
-                        <li><a href="./menu.html" class="ubuntu-regular Menu">Menu</a></li>
-                        <li><a href="./our-story.html" class="ubuntu-regular Our-story ">Our story</a></li>
-                        <li><a href="./onlineorder.html" class="Nav-Item-Order_Online ubuntu-regular">order online</a></li>
-                    </div>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
+        <!-- Navigation Section -->
+        <header id="navBar" style="margin-bottom: 2vh;">
+            <nav>
+                <div class="Nav-container ">
+                    <ul class="NavBar-Items">
+                        <img src="./images/homepage/RestuarantLogo.png" alt="" class="Top-Title-Image" style="cursor: pointer;" onclick="reloadHomepage()">
+    
+                        <div class="hamburger-menu">
+                            <select name="navbarItems" id="navbarItems" onchange="navigateToPage()">
+                                <option value="3linebutton" disabled selected id="linemenu">&#9776;</option>
+                                <optgroup label="Locations">
+                                    <option value="./locations.html?city=hyderabad">Hyderabad</option>
+                                    <option value="./locations.html?city=chennai">Chennai</option>
+                                    <option value="./locations.html?city=mumbai">Mumbai</option>
+                                    <option value="./locations.html?city=bengaluru">Bengaluru</option>
+                                    <option value="./locations.html?city=delhi">Delhi</option>
+                                </optgroup>
+                                <option value="./reservation.html">Reservation</option>
+                                <option value="./event-party.html">Private parties & events</option>
+                                <option value="./menu.html">Menu</option>
+                                <option value="./our-story.html">Our story</option>
+                                <option value="./onlineorder.html">Order online</option>
+                            </select>
+                        </div>
+                        
+    
+                        <div class="NavBar-Items-secondary-color">
+                            <li><a href="#" class="ubuntu-regular Locations">Locations <i class="fas fa-caret-down"></i></a>  <ul class="locations-dropdown">  
+                                    <li><a href="locations.html?city=hyderabad">Hyderabad</a></li>
+                                    <li><a href="locations.html?city=chennai">Chennai</a></li>
+                                    <li><a href="locations.html?city=mumbai">Mumbai</a></li>
+                                    <li><a href="locations.html?city=bengaluru">Bengaluru</a></li>
+                                    <li><a href="locations.html?city=delhi">Delhi</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./reservation.html" class="ubuntu-regular Reservation">Reservation</a></li>
+                            <li><a href="./event-party.html" class="ubuntu-regular Private-parties">Private parties & events</a></li>
+                            <li><a href="./menu.html" class="ubuntu-regular Menu">Menu</a></li>
+                            <li><a href="./our-story.html" class="ubuntu-regular Our-story ">Our story</a></li>
+                            <li><a href="./onlineorder.html" class="Nav-Item-Order_Online ubuntu-regular">order online</a></li>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
     <!-- top Image section -->
     <div class="top-image-section">
         <img src="./images/our-story/old-restaurant.png" alt="">
@@ -51,28 +71,28 @@
     </div>
 
     <!-- Our food -->
-    <div class="c-split" style="margin-bottom: 2.5vh;">
+    <div class="c-split elementOuterMargin">
         <div class="c-split__col c-split__col--empty">
             <div class="c-split__col-inner" style="margin-left: -0.75vw;">
                 <div class="c-split__image" role="img" aria-label="a group of people posing for a bottle of wine"><img src="./images/our-story/our-food.png" alt="" style="padding-left: 0.75vw;"></div>
             </div>
         </div>
-        <div class="c-split__col" style="padding: 40px;">
+        <div class="c-split__col elementInnerPadding">
             <div class="c-split__col-inner ">
                 <div class="c-split__content content our-food">
                     <h2 class="h2 c-split__heading" style="padding:   30px 0px;">Our Food</h2>
                     <p class="ubuntu-regular text-in-story">Tiffin Box offers a culinary journey through the heart of India, with dishes that honor tradition and celebrate flavor. From aromatic curries to savory street snacks, each bite is a testament to our commitment to quality and taste.</p>
                 </div>
-            </div>.
+            </div>
         </div>
     </div>
     
         <!-- Our people -->
-        <div class="c-split about-us-section" style="margin-bottom: 2.5vh;" >
+        <div class="c-split about-us-section OurMargin">
             <div class="c-split__col" style="margin-left: 26.75vw;">
                 <div class="c-split__col-inner">
-                    <div class="c-split__content content" style="margin-left: -14vw;">
-                        <h2 class="h2 c-split__heading" style="padding:30px 0px;margin-top: 6vh; ">Our People</h2>
+                    <div class="c-split__content content margin-content" >
+                        <h2 class="h2 c-split__heading">Our People</h2>
                         <p class="ubuntu-regular text-in-story" style="text-transform: none;">Behind every dish at Tiffin Box is a team of passionate individuals dedicated to creating exceptional dining experiences. With warmth and expertise, our staff ensures that every visit is filled with hospitality and genuine care.</p>
                     </div>
                 </div>
@@ -90,13 +110,13 @@
                     <div class="c-split__image" role="img" aria-label="a group of people posing for a bottle of wine"><img src="./images/our-story/ourcommunity.png" alt="" style="padding-left: 0.75vw;"></div>
                 </div>
             </div>
-            <div class="c-split__col" style="padding: 40px;">
+            <div class="c-split__col communityInner">
                 <div class="c-split__col-inner ">
                     <div class="c-split__content content">
                         <h2 class="h2 c-split__heading" style="padding:   30px 0px;">Our Community</h2>
                         <p class="ubuntu-regular text-in-story">Tiffin Box is more than just a restaurant; it's a gathering place for our vibrant community. Whether you're sharing a meal with loved ones or connecting with new friends, our welcoming atmosphere fosters connections and creates cherished memories.</p>
                     </div>
-                </div>.
+                </div>
             </div>
         </div>
         
@@ -105,7 +125,7 @@
     <footer class="site-footer">
         <div class="site-footer-primary">
             <div class="container">
-                <ul class="social-links" style="margin-left: 30px;">
+                <ul class="social-links" id="social-links" style="margin-left: 30px;">
                     <li><a href="https://www.facebook.com/YourFacebookPage" target="_blank" rel="noopener"><span class="sr-only"><img src="https://www.svgrepo.com/show/299425/facebook.svg" alt=""></span></a></li>
                     <li><a href="https://www.instagram.com/YourInstagramPage/" target="_blank" rel="noopener"><span class="sr-only"><img src="https://www.svgrepo.com/show/303154/instagram-2016-logo.svg" alt=""></span></a></li>
                     <li><a href="https://twitter.com/YourTwitterPage" target="_blank" rel="noopener"><span class="sr-only"><img src="https://cdn2.iconfinder.com/data/icons/threads-by-instagram/24/x-logo-twitter-new-brand-1024.png" alt=""></span></a></li>
@@ -125,5 +145,6 @@
     
 
     <script src="./our-story.js"></script>
+    <script src="./homeIndex.js"></script>
 </body>
 </html>
